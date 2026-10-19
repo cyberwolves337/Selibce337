@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SELIB 2026 - Programação de Links</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #0d1117;
+      --card-bg: #161b22;
+      --border-color: #30363d;
+      --accent-color: #238636;
+      --accent-hover: #2ea043;
+      --text-main: #c9d1d9;
+      --text-heading: #f0f6fc;
+      --text-muted: #8b949e;
+      --tag-bg: #1f6feb23;
+      --tag-color: #58a6ff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', -apple-system, sans-serif; background-color: var(--bg-color); color: var(--text-main); padding: 2rem 1rem; line-height: 1.6; }
+    .container { max-width: 800px; margin: 0 auto; }
+    
+    header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); }
+    header h1 { font-size: 2.2rem; color: var(--text-heading); font-weight: 700; margin-bottom: 0.5rem; }
+    header p { color: var(--text-muted); font-size: 1rem; }
+
+    .day-section { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; margin-bottom: 1.5rem; overflow: hidden; }
+    .day-header { background-color: #21262d; padding: 0.8rem 1.2rem; font-weight: 600; color: var(--text-heading); display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border-color); }
+    .day-badge { background-color: var(--tag-bg); color: var(--tag-color); padding: 0.2rem 0.6rem; border-radius: 12px; font-size: 0.85rem; }
+
+    .event-list { list-style: none; }
+    .event-item { padding: 1rem 1.2rem; border-bottom: 1px solid var(--border-color); display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .event-item:last-child { border-bottom: none; }
+    .event-title { font-weight: 500; color: var(--text-heading); }
+
+    .btn-link { display: inline-flex; align-items: center; background-color: var(--accent-color); color: #fff; padding: 0.4rem 0.9rem; border-radius: 6px; text-decoration: none; font-size: 0.85rem; font-weight: 600; white-space: nowrap; transition: background 0.2s; }
+    .btn-link:hover { background-color: var(--accent-hover); }
+
+    footer { text-align: center; margin-top: 3rem; color: var(--text-muted); font-size: 0.85rem; }
+
+    @media (max-width: 600px) {
+      .event-item { flex-direction: column; align-items: flex-start; }
+      .btn-link { width: 100%; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>📚 SELIB 2026</h1>
+      <p>Confira a programação e acesse as transmissões no Microsoft Teams</p>
+    </header>
+
+    <!-- 26/10 -->
+    <div class="day-section">
+      <div class="day-header">
+        <span>26/10 | Segunda-feira</span>
+        <span class="day-badge">Dia 1</span>
+      </div>
+      <ul class="event-list">
+        <li class="event-item">
+          <span class="event-title">Abertura com Thalita Rebouças</span>
+          <a href="https://events.teams.microsoft.com/event/6215ad51-9d09-43b4-b92a-8aeec1016481@4148a6de-0dd1-4d04-a4c5-78e374e4f6d6?source=copyLinkLegacyShareLinkDialog" target="_blank" class="btn-link">Acessar Teams 🔗</a>
+        </li>
+        <li class="event-item">
+          <span class="event-title">Irka Barrios e Monge Han</span>
+          <a href="https://events.teams.microsoft.com/event/7ac10315-4357-411d-8adc-ccc6299931dc@4148a6de-0dd1-4d04-a4c5-78e374e4f6d6?source=copyLinkLegacyShareLinkDialog" target="_blank" class="btn-link">Acessar Teams 🔗</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 27/10 -->
+    <div class="day-section">
+      <div class="day-header">
+        <span>27/10 | Terça-feira</span>
+        <span class="day-badge">Dia 2</span>
+      </div>
+      <ul class="event-list">
+        <li class="event-item">
+          <span class="event-title">Selibinha com Filipe Macedo Passarinho</span>
+          <a href="https://events.teams.microsoft.com/event/5fb4d201-f67a-48c1-8272-99d49672412c@4148a6de-0dd1-4d04-a4c5-78e374e4f6d6?source=copyLinkLegacyShareLinkDialog" target="_blank" class="btn-link">Acessar Teams 🔗</a>
+        </li>
+        <li class="event-item">
+          <span class="event-title">César Obeid e Marco Haurélio</span>
+          <a href="https://events.teams.microsoft.com/event/5fb4d201-f67a-48c1-8272-99d49672412c@4148a6de-0dd1-4d04-a4c5-78e374e4f6d6?source=copyLinkLegacyShareLinkDialog" target="_blank" class="btn-link">Acessar Teams 🔗</a>
+        </li>
+        <li class="event-item">
+          <span class="event-title">Jeferson Tenório e Waldete Tristão</span>
+          <a href="https://events.teams.microsoft.com/event/c14fa8ec-3c14-45e8-99b3-65d683874896@4148a6de-0dd1-4d04-a4c5-78e374e4f6d6?source=copyLinkLegacyShareEventDialog" target="_blank" class="btn-link">Acessar Teams 🔗</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 28/10 -->
+    <div class="day-section">
+      <div class="day-header">
+        <span>28/10 | Quarta-feira</span>
+        <span class="day-badge">Dia 3</span>
+      </div>
+      <ul class="event-list">
+        <li class="event-item">
+          <span class="event-title">Telma Guimarães e Silvana Salerno</span>
+          <a href="https://events.teams.microsoft.com/event/0159a8a3-72e7-4ed9-8a7c-b939b64bac04@4148a6de-0dd1-4d04-a4c5-78e374e4f6d6?source=copyLinkLegacyShareLinkDialog" target="_blank" class="btn-link">Acessar Teams 🔗</a>
+        </li>
+        <li class="event-item">
+          <span class="event-title">Solaine Chioro e Iris Figueiredo</span>
+          <a href="https://events.teams.microsoft.com/event/1186ee2a-2550-412c-9914-535f4c16d703@4148a6de-0dd1-4d04-a4c5-78e374e4f6d6?source=copyLinkLegacyShareLinkDialog" target="_blank" class="btn-link">Acessar Teams 🔗</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 29/10 -->
+    <div class="day-section">
+      <div class="day-header">
+        <span>29/10 | Quinta-feira</span>
+        <span class="day-badge">Dia 4</span>
+      </div>
+      <ul class="event-list">
+        <li class="event-item">
+          <span class="event-title">Selibinha Tá na Boca do Conto</span>
+          <a href="https://events.teams.microsoft.com/event/b8c9c18e-2c0b-49d7-9c91-a20620328ebd@4148a6de-0dd1-4d04-a4c5-78e374e4f6d6?source=copyLinkLegacyShareLinkDialog" target="_blank" class="btn-link">Acessar Teams 🔗</a>
+        </li>
+        <li class="event-item">
+          <span class="event-title">Lucia Hiratsuka e Sergio Merli</span>
+          <a href="https://events.teams.microsoft.com/event/8f9089ae-0835-429b-a31a-a43090709164@4148a6de-0dd1-4d04-a4c5-78e374e4f6d6?source=copyLinkLegacyShareLinkDialog" target="_blank" class="btn-link">Acessar Teams 🔗</a>
+        </li>
+        <li class="event-item">
+          <span class="event-title">Roberto Denser e Giulia Moon</span>
+          <a href="https://events.teams.microsoft.com/event/fe0dc4fe-64ab-430a-9a60-2d1baa3dc96f@4148a6de-0dd1-4d04-a4c5-78e374e4f6d6?source=copyLinkLegacyShareLinkDialog" target="_blank" class="btn-link">Acessar Teams 🔗</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 30/10 -->
+    <div class="day-section">
+      <div class="day-header">
+        <span>30/10 | Sexta-feira</span>
+        <span class="day-badge">Dia 5</span>
+      </div>
+      <ul class="event-list">
+        <li class="event-item">
+          <span class="event-title">Paloma Blanca e Silvio Costta</span>
+          <a href="https://events.teams.microsoft.com/event/b5a71b2a-339b-463d-b775-176a8574d2ea@4148a6de-0dd1-4d04-a4c5-78e374e4f6d6?source=copyLinkLegacyShareLinkDialog" target="_blank" class="btn-link">Acessar Teams 🔗</a>
+        </li>
+        <li class="event-item">
+          <span class="event-title">Lucas Rocha e Ilustralu</span>
+          <a href="https://events.teams.microsoft.com/event/cc921071-4bcb-4f03-8f3b-9f36f98e07ae@4148a6de-0dd1-4d04-a4c5-78e374e4f6d6?source=copyLinkLegacyShareLinkDialog" target="_blank" class="btn-link">Acessar Teams 🔗</a>
+        </li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>Semana da Literatura e do Livro (SELIB 2026) — Links oficiais de acesso ao Teams</p>
+    </footer>
+  </div>
+
+</body>
+</html>
